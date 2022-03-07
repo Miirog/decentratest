@@ -11,13 +11,27 @@ import { NPC } from '@dcl/npc-scene-utils'
 import { Dialog } from '@dcl/npc-scene-utils'
 import * as utils from '@dcl/ecs-scene-utils'
 
-//let elevator = new Entity()
-//elevator.addComponent(new GLTFShape("models/elevator.gltf"))
-//elevator.addComponent(new Transform())
+let elevator = new Entity()
+elevator.addComponent(new GLTFShape("models/elevator.gltf"))
+elevator.addComponent(
+    new Transform(
+    )
+)
+
+let path = []
+path[0] = new Vector3(13.7, 0, 7.8)
+path[1] = new Vector3(13.7, 5.2, 7.8)
+path[2] = new Vector3(13.7, 0, 7.8)
+
+elevator.addComponent(
+    new utils.Interval(500, () => {
+        elevator.addComponent(new utils.FollowPathComponent(path, 4))
+    }
+  )
+)
+engine.addEntity(elevator)
 
 
- 
-///engine.addEntity(elevator)
 
 const test = new Entity()
 test.addComponent(new GLTFShape("models/test.gltf"))
@@ -27,3 +41,5 @@ test.addComponent(
     })
 )
 engine.addEntity(test)
+
+
