@@ -21,10 +21,21 @@ elevator.addComponent(
 let path = []
 path[0] = new Vector3(13.7, 0, 7.8)
 path[1] = new Vector3(13.7, 5.2, 7.8)
-path[2] = new Vector3(13.7, 0, 7.8)
+path[2] = new Vector3(13.7, 5.2, 7.8)
+path[3] = new Vector3(13.7, 5.2, 7.8)
+path[4] = new Vector3(13.7, 5.2, 7.8)
+path[5] = new Vector3(13.7, 5.2, 7.8)
+path[6] = new Vector3(13.7, 5.2, 7.8)
+path[7] = new Vector3(13.7, 5.2, 7.8)
+path[8] = new Vector3(13.7, 5.2, 7.8)
+path[9] = new Vector3(13.7, 5.2, 7.8)
+path[10] = new Vector3(13.7, 5.2, 7.8)
+path[11] = new Vector3(13.7, 5.2, 7.8)
+path[12] = new Vector3(13.7, 5.2, 7.8)
+path[13] = new Vector3(13.7, 0, 7.8)
 
 elevator.addComponent(
-    new utils.Interval(500, () => {
+    new utils.Interval(3000, () => {
         elevator.addComponent(new utils.FollowPathComponent(path, 4))
     }
   )
