@@ -45,7 +45,7 @@ engine.addEntity(elevator)
 
 
 const test = new Entity()
-test.addComponent(new GLTFShape("models/test.gltf"))
+test.addComponent(new GLTFShape("models/test2.gltf"))
 test.addComponent(
     new Transform({
         position: new Vector3(8, 0, 8)
@@ -53,4 +53,19 @@ test.addComponent(
 )
 engine.addEntity(test)
 
+const loja = new Entity()
+loja.addComponent(new GLTFShape("models/photos.gltf"))
+loja.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+loja.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+
+engine.addEntity(loja)
 
