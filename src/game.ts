@@ -53,19 +53,240 @@ test.addComponent(
 )
 engine.addEntity(test)
 
-const loja = new Entity()
-loja.addComponent(new GLTFShape("models/photos.gltf"))
-loja.addComponent(
+
+const L1 = new Entity()
+L1.addComponent(new GLTFShape("models/Photos/L1.gltf"))
+L1.addComponent(
     new Transform({
         position: new Vector3(8, 0, 8)
     })
 )
-loja.addComponent(
+L1.addComponent(
     new OnClick(() => {
         openExternalURL("https://www.yoficial.com.br/")
     }
     )
 )
+engine.addEntity(L1)
 
-engine.addEntity(loja)
+
+const L2 = new Entity()
+L2.addComponent(new GLTFShape("models/Photos/L2.gltf"))
+L2.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+L2.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+engine.addEntity(L2)
+
+const L3 = new Entity()
+L3.addComponent(new GLTFShape("models/Photos/L3.gltf"))
+L3.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+L3.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+engine.addEntity(L3)
+
+const R1 = new Entity()
+R1.addComponent(new GLTFShape("models/Photos/R1.gltf"))
+R1.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+R1.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+engine.addEntity(R1)
+
+const R2 = new Entity()
+R2.addComponent(new GLTFShape("models/Photos/R2.gltf"))
+R2.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+R2.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+engine.addEntity(R2)
+
+const R3 = new Entity()
+R3.addComponent(new GLTFShape("models/Photos/R3.gltf"))
+R3.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+R3.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+engine.addEntity(R3)
+
+const BL1 = new Entity()
+BL1.addComponent(new GLTFShape("models/Photos/BL1.gltf"))
+BL1.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+BL1.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+engine.addEntity(BL1)
+
+const BR1 = new Entity()
+BR1.addComponent(new GLTFShape("models/Photos/BR1.gltf"))
+BR1.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+BR1.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+engine.addEntity(BR1)
+
+const UL1 = new Entity()
+UL1.addComponent(new GLTFShape("models/Photos/UL1.gltf"))
+UL1.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+UL1.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+engine.addEntity(UL1)
+
+const Front = new Entity()
+Front.addComponent(new GLTFShape("models/Photos/Front.gltf"))
+Front.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+Front.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+engine.addEntity(Front)
+
+const BigU = new Entity()
+BigU.addComponent(new GLTFShape("models/Photos/BigU.gltf"))
+BigU.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+BigU.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+engine.addEntity(BigU)
+
+const UR1 = new Entity()
+UR1.addComponent(new GLTFShape("models/Photos/UR1.gltf"))
+UR1.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+UR1.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+engine.addEntity(UR1)
+
+const UR2 = new Entity()
+UR2.addComponent(new GLTFShape("models/Photos/UR2.gltf"))
+UR2.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+UR2.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+engine.addEntity(UR2)
+
+const UR3 = new Entity()
+UR3.addComponent(new GLTFShape("models/Photos/UR3.gltf"))
+UR3.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+UR3.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+engine.addEntity(UR3)
+
+const UR4 = new Entity()
+UR4.addComponent(new GLTFShape("models/Photos/UR4.gltf"))
+UR4.addComponent(
+    new Transform({
+        position: new Vector3(8, 0, 8)
+    })
+)
+UR4.addComponent(
+    new OnClick(() => {
+        openExternalURL("https://www.yoficial.com.br/")
+    }
+    )
+)
+engine.addEntity(UR4)
+
+
+
+
+
+
+
+
+
+
 
